@@ -23,12 +23,19 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="124dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name:"
+        android:hint="Enter Kilograms"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text1" />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/diu"
+        tools:ignore="MissingConstraints" />
+
 
 
 
@@ -41,7 +48,7 @@
         android:layout_marginTop="44dp"
         android:background="@color/black"
         android:gravity="center"
-        android:text="Click me!"
+        android:text="Convert Now!"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

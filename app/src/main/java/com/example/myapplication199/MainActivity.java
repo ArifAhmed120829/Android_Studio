@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button b1 = findViewById(R.id.button);
-        Button b2 = findViewById(R.id.button2);
 
-        b2.setText("Created by!");
-        b2.setTextColor(Color.RED);
+
+
+
 
         b1.setOnClickListener(new OnClickListener() {
             @Override
