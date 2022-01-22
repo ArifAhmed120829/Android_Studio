@@ -18,10 +18,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //wIDGETS
+
         TextView textView = findViewById(R.id.text1);
         textView.setBackgroundColor(Color.GRAY);
 
         EditText edit1 = findViewById(R.id.edit1);
+        TextView textView1 = findViewById(R.id.textView1);
+        TextView textView2 = findViewById(R.id.textView2);
+
+
+
 
 
 
@@ -42,8 +49,16 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                String name = edit1.getText().toString();
-                Toast.makeText(getApplicationContext(),""+name,Toast.LENGTH_LONG).show();
+                //1-Get the kilogram value from edittext
+
+                //2-Convert the kilograms to pounds
+                String kilograms = edit1.getText().toString();
+                //3- Converting the String into float
+                float kilos = Float.parseFloat(kilograms);
+                float pounds = (float)(kilos * 2.20462);
+                //4- set the Textview with the result_ Displaying result
+                //Toast.makeText(getApplicationContext(),""+name,Toast.LENGTH_LONG).show();
+                textView2.setText(""+pounds);
             }
         });
 
@@ -57,9 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-public void method1(View view) {
-        Toast.makeText(getApplicationContext(),"Arif_Ahmed",Toast.LENGTH_SHORT).show();
-}
+
 
 
 }
